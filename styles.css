@@ -9,29 +9,35 @@ html, body {
 }
 
 .background-img1 {
-    /* Add Background Image here */
+    background-image: url("image1.png");/* Add Background Image here */
     min-height: 100%;
 }
 
 .background-img2 {
-    /* Add Background Image here */
+    background-image: url("image2.png");/* Add Background Image here */
     min-height: 400px;
 }
 
 .background-img3 {
-    /* Add Background Image here */
+    background-image: url("image3.png");/* Add Background Image here */
     min-height: 400px;
 }
 
 .background-img1, .background-img2, .background-img3 {
     position: relative;
-   /* Write your code below*/
+    /* background-position: center ;  */
+    /* norepetation of iamges */
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    /* to give a parallax effect */
+    background-attachment: fixed;
 }
 
 .ptext {
     position: absolute;
     width: 100%;
-    text-align: left;
+    /* to align all the elements in center */
+    text-align: center;
     top: 50%;
     color: black;
     font-size: 27px;
@@ -39,10 +45,11 @@ html, body {
     text-transform: uppercase;
 }
 
-.textbg {
+.textbg a {
     background-color: #313534;
     color: white;
     padding: 20px;
+    text-decoration: none;
 }
 
 .section {
